@@ -6,7 +6,7 @@
     <title>Homepage</title><script src="https://kit.fontawesome.com/4796652edb.js" crossorigin="anonymous"></script>
     <style>
         div{
-            background-image: url(images/firstpic.jpg);
+            /* background-image: url(images/firstpic.jpg); */
             height:350px;
             width: 450px;
             display: block;
@@ -39,16 +39,34 @@
 .veges{
     text-align: center;
 }
+    .nav{
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+
+        }
+        
+        li{
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+        }
+
 
     </style>
 </head>
 <body>
     <nav>
+        <ul class="nav">
+            <!-- <div class="nav"> -->
         <li><a href="index.html">Home</a></li>
         <li><a href="pages/product.html">Products</a></li>
         <li><a href="pages/contact.html">Contact us</a></li>
         <li><a href="pages/login.html">Login</a></li>
         <li><a href="pages/signup.html">Signup</a></li>
+    <!-- </div> -->
+    </ul>
     </nav>
 
     <div>
@@ -72,6 +90,8 @@
     <h3>African Legumes</h3>
     <img src="https://th.bing.com/th/id/OIP.n9uDSQCfs_8HcJp5IwlCOwHaEK?w=291&h=180&c=7&r=0&o=5&pid=1.7" alt="">
     <h3>African Vegetables</h3>
+      <img src="images/Kola nut.jpg" width="250">
+      <h3>African Kola nut</h3>
 
     <h2>Newsletter</h2>
 <form action="">
@@ -79,11 +99,18 @@
     <input type="email" />    
 </form>
 <hr>
-<footer>Please follow us on our socials.👍👍</footer>
+
+    <div>
+    <p>Please follow us on our socials.👍👍</p>
+</div>
+<footer>
+<div>
 <i class="fa-brands fa-facebook"></i>
 <i class="fa-brands fa-instagram"></i>
 <i class="fa-brands fa-youtube"></i>
 <i class="fa-brands fa-x-twitter"></i>
+</div>
+</footer>
     
 </body>
 </html>
