@@ -52,6 +52,12 @@
         }
         .nav li a{
             text-decoration: none;
+            color: #000;
+        }
+
+        nav li a{
+
+            color: #000;
         }
         .logo{
             height: 190px;
@@ -66,7 +72,12 @@
         }
         .big{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .big div{
+            width: 30%;
         }
         .news{
             background-color: rgb(3, 3, 24);
@@ -95,11 +106,14 @@
         .up{
             margin-left: 410px;
         }
+        #set{
+            display: none;
+        }
 
 
     </style>
 </head>
-<body>
+<body style="background-color: rgb(183, 224, 183);">
     <nav>
         <ul class="container">
             <img src="images/logo.jpg" alt="" class="logo">
@@ -112,7 +126,7 @@
     </nav>
 
     <div class="raw">
-        <p><b>Taste The Raw Goodness Of Africa</b></p><button> <a href="pages/product.html">Explore Our Products</a></button> 
+        <p><b id="Rawfood">Taste The Raw Goodness Of Africa</b></p><button id = "product"> <a href="pages/product.html">Explore Our Products</a></button> 
     </div>
 
 
@@ -124,20 +138,33 @@
     </p>
         <h1 style="text-align: center;">Browse Through The African Goodness</h1>
         <div class="big">
-            <div><img src="images/spices.jpg" alt=""><h3>African Spices</h3></div>
-            <div><img src="images/fruit.jpg" alt=""><h3>African Fruits</h3></div>
-            <div><img src="images/leafy.jpg" alt=""><h3>African Leafy</h3></div>
+            <div><img src="images/spices.jpg" alt="" id="Spices"><h3>African Spices</h3></div>
+            <div><img id="Fruits"src="images/fruit.jpg" alt=""><h3>African Fruits</h3></div>
+            <div><img id="Leafy"src="images/leafy.jpg" alt=""><h3>African Leafy</h3></div>
+            <div><img src="images/legumes.jpg" alt="" id="Legumes"><h3>African Legumes</h3></div>
+            <div><img src="images/vegies.jpg" alt="" id="Vegetables"><h3>African Vegetables</h3></div>
+            <div><img src="images/tubers.jpg" alt="" id="Tubers"><h3>African Tubers</h3></div>
+            <div><img id="Barley"src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+            <div><img id= "Maize"src="images/maize.jpg" alt=""><h3>African Maize</h3></div>
+            <div><img src="images/wheat.jpg" alt="" id="WHeat"><h3>African Wheat</h3></div>
         </div>
-        <div class="big">
-            <div><img src="images/legumes.jpg" alt=""><h3>African Legumes</h3></div>
-            <div><img src="images/vegies.jpg" alt=""><h3>African Vegetables</h3></div>
-            <div><img src="images/tubers.jpg" alt=""><h3>African Tubers</h3></div>
+<!-- //Loading more images. -->
+       
+<!-- 
+        //Another set of nine images. -->
+        <div class="big" id="set">
+            <div><img src="images/spices.jpg" alt="" id="Spices"><h3>African Spices</h3></div>
+            <div><img id="Fruits"src="images/fruit.jpg" alt=""><h3>African Fruits</h3></div>
+            <div><img id="Leafy"src="images/leafy.jpg" alt=""><h3>African Leafy</h3></div>
+            <div><img src="images/legumes.jpg" alt="" id="Legumes"><h3>African Legumes</h3></div>
+            <div><img src="images/vegies.jpg" alt="" id="Vegetables"><h3>African Vegetables</h3></div>
+            <div><img src="images/tubers.jpg" alt="" id="Tubers"><h3>African Tubers</h3></div>
+            <div><img id="Barley"src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+            <div><img id= "Maize"src="images/maize.jpg" alt=""><h3>African Maize</h3></div>
+            <div><img src="images/wheat.jpg" alt="" id="WHeat"><h3>African Wheat</h3></div>
         </div>
-        <div class="big">
-            <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
-            <div><img src="images/maize.jpg" alt=""><h3>African Maize</h3></div>
-            <div><img src="images/wheat.jpg" alt=""><h3>African Wheat</h3></div>
-        </div>
+        
+        <button id="load">Load more</button>
 
 <div class="news">
     <div>
@@ -169,6 +196,6 @@
 <i class="fa-brands fa-x-twitter"></i>
 </div>
 </footer>
-    
+   <script src="src/index.js"></script> 
 </body>
 </html>
