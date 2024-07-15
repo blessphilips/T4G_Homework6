@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title><script src="https://kit.fontawesome.com/4796652edb.js" crossorigin="anonymous"></script>
     <style>
+        .black{
+            color: black;
+        }
+        body{
+            /* background-color: darkorange; */
+            background-image: url(../images/wheat.jpg);
+            background-size: cover;
+        }
         .nav{
             display: flex;
             justify-content: flex-end;
@@ -13,62 +21,97 @@
         a{
             text-decoration: none;
         }
+
+        .h3{
+            font-size: 60px;
+            text-align: center;
+            font-family: cursive;
+        }
         .bless{
             background-color: darkorange;
             display:flex;
             justify-content: space-around;
 
         } 
-        parafont{
-            display: flex;
+
+        .flex{
+            display: flex ;
+            gap:40px;
         }
+       
         .font{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             font: 1.5em bolder;
+            
         }
-        .wheatbundles{
-            display: flex;
-            justify-content:left;
-            background-color: orangered;
-        }
+       
+    .formstyle{
+        /* background-image: url(../images/wheat\ bundles.jpg); */
+        margin: 0px auto;
+        width: 30%;
+        opacity: 0.9;  
+        padding: 20px;  
+        /* text-align: left; */
+        /* background-color: aqua; */
+    }
+
+    .formdivs{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .formdivs input{
+        padding: 9px 0;
+        margin-bottom: 15px;
+    }
+
+    /* .formdivs label{
+        background-color: rgb(94, 94, 218);
+        font-size: 30px;
+        opacity: 0.5px;
+
+    } */
+
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <div class="nav">
-          <a href="../index.html">Home</a>
-            <a href="product.html">Product</a>
-          <a href="contact.html">Contact</a> 
-          <a href="login.html">Login</a>
-          <a href="signup.html">Signup</a> 
+          <a class="black" href="../index.html">Home</a>
+            <a class="black" href="product.html">Product</a>
+          <a  class="black" href="contact.html">Contact</a> 
+          <a class="black" href="login.html">Login</a>
+          <a class="black" href="signup.html">Signup</a> 
         </div>
         </ul>
     </nav>
-    <h3>This is the contact us page.</h3>
-    <p>I don't have a lot going on here now,but <button><a href="login.html">click to login</a></button></p>
-    <form action="">
-        <div>
-        <label for="">Your Name</label>
-        <input type="text" placeholder="Name">
+    
+    <div class="flex">
+        <!-- <div class="wheatbundles">
+            <img src="../images/wheat bundles.jpg" alt="" width="500px">
+        </div> -->
+            <div  class="formstyle">
+            <form action="">
+                <h3 class="h3">Contact Us</h3>
+                <div class="formdivs">
+                    <!-- <label for="">Your Name</label> -->
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="formdivs">
+                    <!-- <label for="Email">Email</label> -->
+                    <input type="text"placeholder="Your Email">
+                </div>
+                <textarea name="" id="" placeholder="Enter your text here.." cols="51" rows="10"></textarea>
+            </form>
+        </div>
     </div>
-    <div>
-        <label for="Email">Email</label>
-        <input type="text"placeholder="Your Email">
-     </div>
-     <textarea name="" id="" placeholder="Enter your text here.." cols="30" rows="10"></textarea>
-     
-    </form>
     
     
         <footer>
         
-        <div class="wheatbundles">
-            <img src="../images/wheat bundles.jpg" alt="">
-
-            
-        </div>
+        
         
         <div class="parafont">
             <p>Please follow us on our socials 👇👇</p>

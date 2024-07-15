@@ -3,7 +3,7 @@
 function promptName(){
     let name = prompt("What is your name?");
     let Raw=document.querySelector("#Rawfood");//we are manipulating the DOM in taste the raw goodness of africa.
-    Raw.innerHTML=(`Hi👋 Welcome ${name}, Taste the Raw Goodness of Africa.`)
+    Raw.innerHTML=(`Hi👋 Welcome ${name}, Taste the Raw Goodness of Africa.`);
 }
 let product=document.getElementById("product");
 product.addEventListener("mouseenter", promptName);
