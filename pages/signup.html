@@ -5,13 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup page</title><script src="https://kit.fontawesome.com/4796652edb.js" crossorigin="anonymous"></script>
     <style>
+        body{
+            background-image: url(../images/Kola\ nut.jpg);
+            background-size: cover;
+        }
         .nav{
             display: flex;
             justify-content: flex-end;
-            gap: 30px;
+            gap: 5em;
         }
         a{
             text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .mainform{
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            padding: 50px;
+            width: 50%;
+            height: 450px;
+            margin-left: 250px;
+            box-shadow: 4px 4px 4px 4px;
+        }
+        input{
+            height: 20px;
+            width: 20em;
+        }
+        label{
+            display: block;
+            line-height: 25px;
+        }
+        button{
+            margin-top: 5px;
+            background-color: blueviolet;
+
+        }
+        .foot{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .font{
+   display: flex;
+   gap: 40px;
+   justify-content: center;
+        }
+        .navlink:hover{
+  background-color: blueviolet;
+  border-radius: 30px;
+  padding: 5px;
         }
     </style>
 </head>
@@ -19,56 +62,62 @@
     <nav>
         <ul>
             <div class="nav">
-            <div><a href="../index.html">Home</a></div>
-            <div><a href="product.html">Products</a></div>
-            <div><a href="contact.html">Contact</a></div>
-            <div><a href="login.html">Login</a></div>
-            <div><a href="signup.html">Signup</a></div>
+            <div class="navlink"><a href="../index.html">Home</a></div>
+            <div class="navlink"><a href="product.html">Products</a></div>
+            <div class="navlink"> <a href="../pages/about us..html">about us</a></div>
+            <div class="navlink"><a href="contact.html">Contact</a></div>
+            <div class="navlink"><a href="login.html">Login</a></div>
+            <div class="navlink"><a href="signup.html">Signup</a></div>
         </div>
         </ul>
     </nav>
-    <form action="">
+    
+     <div class="mainform">
+        <form action="">
+            <h2>Sign Up Now</h2>
+           <div>
+               <label for="First Name">First Name </label>
+               <input type="text" placeholder="First Name" required>
+         </div>
+             <label for="Last Name">Last Name</label>
+             <input type="text" placeholder="Last Name" required>
         <div>
-        <label for="First Name">First Name </label>
-        <input type="text" placeholder="First Name" required>
-    </div>
-        <label for="Last Name">Last Name</label>
-        <input type="text" placeholder="Last Name" required>
+            <label for="Phone">Phone</label>
+             <input type="text" placeholder="Phone" required >
+        </div>
         <div>
-        <label for="Phone">Phone</label>
-        <input type="text" placeholder="Phone" required >
-    </div>
-    <div>
-    <label for="Date of Birth">Date of Birth</label>
-    <input type="date" name="" id="" required>
+            <label for="Date of Birth">Date of Birth</label>
+             <input type="date" name="" id="" required>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="" placeholder="Your Email">
+        </div>
+        <div>
+           <label for="Password">Password</label>
+             <input type="password"Name="" placeholder="" required>
+        </div>
+        <div>
+              <label for="Re-enter">Re-enter Password</label>
+              <input type="password" name="" placeholder="">
+        </div>
+            <button type="submit">Submit</button>
 </div>
-<div>
-<label for="Email">Email</label>
-<input type="email" name="" placeholder="Your Email">
-</div>
-<div>
-    <label for="Password">Password</label>
-    <input type="password"Name="" placeholder="" required>
-</div>
-<div>
-    <label for="Re-enter">Re-enter Password</label>
-    <input type="password" name="" placeholder="">
-</div>
-<button type="submit">Submit</button>
     </form> 
     <hr>
    
-        <div>
-       <P>Please follow us on our socials.👍👍</P>
-    </div>
+      
+       
+    <div class="foot">
  <footer>
-    <div>
+    <P>Please follow us on our socials.👍👍</P>
+    <div class="font">
      <i class="fa-brands fa-facebook"></i>
     <i class="fa-brands fa-instagram"></i>
     <i class="fa-brands fa-youtube"></i>
     <i class="fa-brands fa-x-twitter"></i>
 </div>
 </footer>
-    
+    </div>
 </body>
 </html>
