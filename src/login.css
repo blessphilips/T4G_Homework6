@@ -14,7 +14,7 @@ a{
 .mainform{
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: darkorange;
     padding: 50px;
     width: 30%;
     height: 450px;
@@ -34,7 +34,7 @@ button{
 
 }
 .foot{
-    background-color: aquamarine;
+    background-color: olive;
     padding: 10px;
 }
 .font{
@@ -44,7 +44,7 @@ margin: 0 auto;
 justify-content: space-between;
 }
 .navlink:hover{
-background-color: blueviolet;
+background-color: rgb(165, 14, 132);
 border-radius: 30px;
 padding: 5px;
 }
@@ -52,16 +52,22 @@ padding: 5px;
     width: 80%;
     display: flex;
     margin: 20px auto;
+    border-radius: 10px;
     /* margin-bottom: 20px; */
 
 }
 
 .page > *{
     width: 50%;
+    border-radius: 10px;
 }
 img{
     width: 100%;
     height: 100%;
     box-shadow: 4px 4px 10px;
     
+}
+.git{
+    background-color: white;
+    font-size: 50px;
 }

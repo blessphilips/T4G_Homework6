@@ -42,26 +42,17 @@
     .container{
             display: flex;
             justify-content: flex-end;
-            gap: 70px;
+            gap: 4em;
             
 
         }
         
-        li{
-            list-style: none;
-        }
-        .nav li a{
-            text-decoration: none;
-            color: #000;
-        }
-
-        nav li a{
-
-            color: #000;
+        a{
+            color: white;
         }
         .logo{
-            height: 190px;
-            width: 190px;
+            height: 70px;
+            width: 80px;
             /* margin-bottom: 20px; */
             margin-right: auto;
 
@@ -120,20 +111,34 @@
             border: 3px solid color green;
             margin-bottom: 20px;
         }
+#more{
+    display: none;
+}
 
+.navlink:hover{
+background-color: blueviolet;
+border-radius: 30px;
+padding: 5px;
+}
+.kin{
+    color: black;
+}
 
     </style>
 </head>
 <body style="background-color: rgb(141, 108, 46);">
+    
     <nav>
-        <ul class="container">
-            <img src="images/logo.jpg" alt="" class="logo">
-        <li class="item"><a href="index.html" style="text-decoration: none;">Home</a></li>
-        <li class="item"><a href="pages/product.html"style="text-decoration: none;">Products</a></li>
-        <li class="item"></li> <a href="../pages/about us..html"style="text-decoration: none;">about us</a></li>
-        <li class="item"><a href="pages/contact.html" style="text-decoration: none;">Contact us</a></li>
-        <li class="item"><a href="pages/login.html" style="text-decoration: none;">Login</a></li>
-        <li class="item"><a href="pages/signup.html" style="text-decoration: none;">Signup</a></li>
+        <ul>
+            <div class="container">
+            <img src="images/wfp.jpg" alt="" class="logo">
+         <div class="navlink"><a href="index.html" style="text-decoration: none;">Home</a></div> 
+        <div class="navlink"><a href="pages/product.html"style="text-decoration: none;">Products</a></div>
+        <div class="navlink"><a href="pages/about.html"style="text-decoration: none;">about us</a></div>
+            <div class="navlink"><a href="pages/contact.html" style="text-decoration: none;">Contact us</a></div>
+                <div class="navlink"><a href="pages/login.html" style="text-decoration: none;">Login</a></div>
+                    <div class="navlink"><a href="pages/signup.html" style="text-decoration: none;">Signup</a></div>
+                </div>
     </ul>
     </nav>
 
@@ -145,7 +150,7 @@
     <p class="food"> African food is diverse,and when you are talking about food,the culture comes in too. With over 54 countries and 3000 ethnic groups,African food has much to offer. In this website,we will explore some fascinating facts about African foods. The food is rich in flavor and reflects the continent's varied <b>history</b>,geography,and cultural<b>traditions</b>.Bottomline,there are many African countries with great food.
     <br>
         <button>
-            <a href="pages/product.html" style="text-decoration: none; font-size: large; padding: 40px;">Learn more</a>
+            <a  class="kin" href="pages/product.html" style="text-decoration: none; font-size: large; padding: 40px;">Learn more</a>
         </button>
     </p>
         <h1 style="text-align: center;">Browse Through The African Goodness</h1>
@@ -164,7 +169,7 @@
 <button id="load">Load more</button>
 <!-- 
         //Another set of nine images. -->
-        <div class="big" id="set">
+        <div class="big" id="more">
             <div><img src="images/spices.jpg" alt="" id="Spices"><h3>African Spices</h3></div>
             <div><img id="Fruits"src="images/fruit.jpg" alt=""><h3>African Fruits</h3></div>
             <div><img id="Leafy"src="images/leafy.jpg" alt=""><h3>African Leafy</h3></div>
