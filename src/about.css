@@ -5,39 +5,39 @@
     font-family: "Poppins", sans-serif;
 }
 .section{
-    width: 60%;
+    width: 100%;
     min-height: 230vh;
-    background: color 0;;
+
 }
-.main{
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-}
+
 .content-section{
-    float: left;
-    width: 55%;
+    /* float: left; */
+    width: 50%;
 }
-.image-section img{
-float: right;
-width: 40%;
-}
-.content-section .title{
+
+ .h1{
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 35px;
 }
-.content-section .content h3{
+ h3{
     margin-top: 20px;
     color: firebrick;
 }
-.content-section .content p{
+p{
     margin-top: 10px;
     font-family:sans-serif ;
     font-size: 18px;
     line-height: 1.5;
 }
-.content-section .content .buttom{
+.buttom{
+    background-color: fuchsia;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+/* .content-section .content .buttom{
      margin-top: 30px;
 }
 .content-section .content .buttom a{
@@ -47,24 +47,58 @@ width: 40%;
     color: #fff;
     font-size: 25px;
     letter-spacing: 1.5px;
-}
-.content-section .content .buttom a:hover{
+} */
+.buttom:hover{
     background-color: #333d07;
     color: #fff;
 }
+.social{
+    background-color: rgb(219, 129, 10);
+    padding: 20px 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
 .social i{
-    color: rgb(180, 140, 8);
+    color: rgb(17, 13, 0);
     font-size: 30px;
     padding: 0px 10px;
+    
 }.content-section .social i:hover{
     color: #333d07;
 
 }
-@media screen and (max-width:768px)
-    .main{
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 100px;
-    }
 
+.content{
+    background-color: aliceblue;
+    padding: auto;
+    height: fit-content;
+    margin-top: 55px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.image{
+    width: 30%;
+    height: 700px;
+    margin-top: 55px;
+    box-shadow: 4px 4px 4px 10px;
+}
+#read{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#read:hover{
+    color: blue;
+}
+body{
+    background-image: url(../images/natural.jpg);
+}
+img{
+    width: 190%;
+    height: 700px;
+}
+#text{
+    display: none;
+}
