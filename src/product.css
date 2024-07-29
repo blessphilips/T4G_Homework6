@@ -1,0 +1,76 @@
+.raw{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+}
+h3{
+    background-color: rgb(231, 143, 11);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4em;
+
+
+}
+.navlink:hover{
+    background-color: rgb(7, 7, 7);
+    border-radius: 30px;
+    padding: 5px;
+    }
+
+li{
+    list-style: none;
+}
+.nav li a{
+    text-decoration: none;
+}
+a{
+text-decoration: none;
+color: white;
+}
+.band{
+    background-color:rgb(9, 221, 193);
+    font-size: 50px;
+    border-radius: 7px;
+}
+#show{
+    display: none;
+}
+#lessone{
+    display: none;
+}
+#move{
+    display: none;
+}
+#lesstwo{
+    display: none;
+}
+#readone{
+    display: none;
+}
+#lessthree{
+    display: none;
+}
+#soup{
+    display: none;
+}
+#lessfour{
+    display: none;
+}
+#sisters{
+    display: none;
+}
+#lessfive{
+    display: none;
+}
+#the{
+    display: none;
+}
+#lesssix{
+    display: none;
+}

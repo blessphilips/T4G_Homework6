@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title><script src="https://kit.fontawesome.com/4796652edb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../src/login.css">
     <style>
-        .nav{
-            display: flex;
-            justify-content: flex-end;
-            gap: 30px;
+        body{
+            background-image: url(../images/beauty.jpg);
         }
-        a{
-            text-decoration: none;
-        }
-
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <div class="nav">
-                <a href="../index.html">Home</a>
-              <a href="product.html">Product</a>
-              <a href="contact.html">Contact</a>
-              <a href="login.html">Login</a>
-              <a href="signup.html">Signup</a>
+            <div class="navlink"><a href="../index.html">Home</a></div>
+            <div class="navlink"><a href="product.html">Products</a></div>
+            <div class="navlink"> <a href="about.html">about us</a></div>
+            <div class="navlink"><a href="contact.html">Contact</a></div>
+            <div class="navlink"><a href="login.html">Login</a></div>
+            <div class="navlink"><a href="signup.html">Signup</a></div>
         </div>
         </ul>
     </nav>
-         <h3>This is our login page</h3>
-         <form action="">
+    <div class="page">
+        <div>
+             <img src="https://i.pinimg.com/originals/33/ac/21/33ac21e3a0aebcb11a4624b1d5d64ee6.gif" alt="">
+        </div>
+  <div class="mainform">
+         <form action="" style="background-color: rgb(128, 224, 18);">
+            <h3>This is our login page</h3>
               <div>
             <label for="Email">Email</label>
             <input type="text" placeholder="Email">
@@ -38,25 +39,26 @@
             <label for="Password">Password</label>
             <input type="password" name="Password" placeholder=""required>
             </div>
-        <div>
-        <button type="submit">Submit</button>
-   </div>
-         </form>
-          <b><p>Login Page</p></b>
-          <button><a href="../index.html">click to go back home</a></button>
-          <hr>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+          <!-- <button><a href="../index.html">click to go back home</a></button> -->
+    
            
-                <div>
-               <p>Please follow us on our socials.👍👍</b>
-               </div>
+                <div class="foot">
                <footer>
-                <div>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-x-twitter"></i>
+                Please follow us on our socials.👍👍
+                <div class="font">
+                <div class="git"><i class="fa-brands fa-facebook"></i></div>
+                <div class="git"><i class="fa-brands fa-instagram"></i></div>
+                <div class="git"><i class="fa-brands fa-youtube"></i></div>
+                <div class="git"><i class="fa-brands fa-x-twitter"></i></div>
             </div>
             </footer>
+                </div>
     
 </body>
 </html>

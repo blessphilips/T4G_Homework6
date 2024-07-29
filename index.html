@@ -42,26 +42,17 @@
     .container{
             display: flex;
             justify-content: flex-end;
-            gap: 70px;
-           
+            gap: 4em;
+            
 
         }
         
-        li{
-            list-style: none;
-        }
-        .nav li a{
-            text-decoration: none;
-            color: #000;
-        }
-
-        nav li a{
-
-            color: #000;
+        a{
+            color: white;
         }
         .logo{
-            height: 190px;
-            width: 190px;
+            height: 70px;
+            width: 80px;
             /* margin-bottom: 20px; */
             margin-right: auto;
 
@@ -109,10 +100,33 @@
         #set{
             display: none;
         }
+        .big-div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .small-div{
+            width: 300px;
+            height: 300px;
+            border: 3px solid color green;
+            margin-bottom: 20px;
+        }
+#more{
+    display: none;
+}
 
+.navlink:hover{
+background-color: blueviolet;
+border-radius: 30px;
+padding: 5px;
+}
+.kin{
+    color: black;
+}
 
     </style>
 </head>
+<<<<<<< HEAD
 <body style="background-color: rgb(184, 182, 74);">
     <nav>
         <ul class="container">
@@ -123,6 +137,21 @@
         <li class="item"><a href="pages/contact.html" style="text-decoration: none;">Contact us</a></li>
         <li class="item"><a href="pages/login.html" style="text-decoration: none;">Login</a></li>
         <li class="item"><a href="pages/signup.html" style="text-decoration: none;">Signup</a></li>
+=======
+<body style="background-color: rgb(141, 108, 46);">
+    
+    <nav>
+        <ul>
+            <div class="container">
+            <img src="images/wfp.jpg" alt="" class="logo">
+         <div class="navlink"><a href="index.html" style="text-decoration: none;">Home</a></div> 
+        <div class="navlink"><a href="pages/product.html"style="text-decoration: none;">Products</a></div>
+        <div class="navlink"><a href="pages/about.html"style="text-decoration: none;">about us</a></div>
+            <div class="navlink"><a href="pages/contact.html" style="text-decoration: none;">Contact us</a></div>
+                <div class="navlink"><a href="pages/login.html" style="text-decoration: none;">Login</a></div>
+                    <div class="navlink"><a href="pages/signup.html" style="text-decoration: none;">Signup</a></div>
+                </div>
+>>>>>>> 9eb9e0d0cee13fd6f41ccf660b023dec27560ac9
     </ul>
     </nav>
 
@@ -134,7 +163,7 @@
     <p class="food"> African food is diverse,and when you are talking about food,the culture comes in too. With over 54 countries and 3000 ethnic groups,African food has much to offer. In this website,we will explore some fascinating facts about African foods. The food is rich in flavor and reflects the continent's varied <b>history</b>,geography,and cultural<b>traditions</b>.Bottomline,there are many African countries with great food.
     <br>
         <button>
-            <a href="pages/product.html" style="text-decoration: none; font-size: large; padding: 40px;">Learn more</a>
+            <a  class="kin" href="pages/product.html" style="text-decoration: none; font-size: large; padding: 40px;">Learn more</a>
         </button>
     </p>
         <h1 style="text-align: center;">Browse Through The African Goodness</h1>
@@ -150,10 +179,10 @@
             <div><img src="images/wheat.jpg" alt="" id="WHeat"><h3>African Wheat</h3></div>
         </div>
 <!-- //Loading more images. -->
-       
+<button id="load">Load more</button>
 <!-- 
         //Another set of nine images. -->
-        <div class="big" id="set">
+        <div class="big" id="more">
             <div><img src="images/spices.jpg" alt="" id="Spices"><h3>African Spices</h3></div>
             <div><img id="Fruits"src="images/fruit.jpg" alt=""><h3>African Fruits</h3></div>
             <div><img id="Leafy"src="images/leafy.jpg" alt=""><h3>African Leafy</h3></div>
@@ -163,9 +192,11 @@
             <div><img id="Barley"src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
             <div><img id= "Maize"src="images/maize.jpg" alt=""><h3>African Maize</h3></div>
             <div><img src="images/wheat.jpg" alt="" id="WHeat"><h3>African Wheat</h3></div>
+            <button id="hide">Hide</button>
         </div>
         
-        <button id="load">Load more</button>
+        
+      
 
 <div class="news">
         <div>
