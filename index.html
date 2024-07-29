@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title><script src="https://kit.fontawesome.com/4796652edb.js" crossorigin="anonymous"></script>
     <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-self: center;
+        }
         .raw{
             /* background-image: url(images/firstpic.jpg); */
             height:350px;
@@ -13,7 +19,7 @@
             margin: auto;
             border: 30px solid black;
             border-radius: 20px;
-             color: white;
+             color: rgb(255, 255, 255);
             text-align: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -41,13 +47,13 @@
 }
     .container{
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             gap: 4em;
             
 
         }
         
-        a{
+    .navlink a{
             color: white;
         }
         .logo{
@@ -90,7 +96,7 @@
             
         }
         .but{
-            color: white;
+            color: rgb(165, 176, 201);
            background-color: rgb(10, 10, 32);
            border-radius: 1px;
         }
@@ -117,8 +123,12 @@
 
 .navlink:hover{
 background-color: blueviolet;
-border-radius: 30px;
-padding: 5px;
+border-radius: 10px;
+/* padding: 15px; */
+}
+.navlink{
+/* background-color: darkblue; */
+padding: 10px 5px;
 }
 .kin{
     color: black;
@@ -140,20 +150,21 @@ padding: 5px;
 
 <body style="background-color: rgb(141, 108, 46);">
     
-    <nav>
-        <ul>
+     
             <div class="container">
+                <div>
             <img src="images/wfp.jpg" alt="" class="logo">
+        </div>
+        <nav> 
          <div class="navlink"><a href="index.html" style="text-decoration: none;">Home</a></div> 
         <div class="navlink"><a href="pages/product.html"style="text-decoration: none;">Products</a></div>
         <div class="navlink"><a href="pages/about.html"style="text-decoration: none;">about us</a></div>
             <div class="navlink"><a href="pages/contact.html" style="text-decoration: none;">Contact us</a></div>
                 <div class="navlink"><a href="pages/login.html" style="text-decoration: none;">Login</a></div>
                     <div class="navlink"><a href="pages/signup.html" style="text-decoration: none;">Signup</a></div>
-                </div>
-
-    </ul>
+                
     </nav>
+</div>
 
     <div class="raw">
         <p><b id="Rawfood">Taste The Raw Goodness Of Africa</b></p><button id = "product"> <a href="pages/product.html">Explore Our Products</a></button> 
