@@ -5,6 +5,9 @@ body{
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+    background-color: rgb(2, 1, 14);
+    padding: 20px 0;
+    opacity: 0.8;
 }
 a{
     text-decoration: none;
